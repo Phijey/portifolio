@@ -1,6 +1,8 @@
 # Portfólio Profissional — Pedro José Camilo 💼
 
 > Website de portfólio profissional, responsivo e bilíngue (PT/EN), com linha do tempo de projetos, experiências e formulário de contato com envio real de e-mail.
+>
+> 🌐 **Acesse:** https://pedro-camilo-portifolio.vercel.app
 
 <table>
   <tr>
@@ -25,7 +27,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pedro-camilo-portifolio.vercel.app)
 ![Status](https://img.shields.io/badge/status-concluído-3ddc97?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-4c8dff?style=for-the-badge)
 
@@ -52,7 +54,7 @@
 
 ## 🔗 Links Úteis
 
-- 🌐 **Site publicado:** _link será adicionado após o deploy na Vercel_
+- 🌐 **Site publicado:** [pedro-camilo-portifolio.vercel.app](https://pedro-camilo-portifolio.vercel.app)
 - 🎨 **Protótipo no Figma:** [Wireframes do portfólio](https://www.figma.com/design/dg4oqhBoANejbjIByxsy8i/Portifolio?node-id=0-1&t=50rcibEosvjXIEyv-1)
 - 💻 **Repositório:** [github.com/Phijey/portifolio](https://github.com/Phijey/portifolio)
 
