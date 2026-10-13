@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { HiCheckCircle, HiExclamationCircle, HiOutlinePaperAirplane } from 'react-icons/hi'
 import { z } from 'zod'
@@ -38,17 +38,22 @@ export function ContactForm() {
     handleSubmit,
     reset,
     trigger,
-    formState: { errors, isSubmitting, isSubmitted },
+    getFieldState,
+    formState: { errors, isSubmitting },
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
     mode: 'onTouched',
     defaultValues: { name: '', email: '', message: '' },
   })
 
-  // revalida ao trocar de idioma para traduzir as mensagens de erro já exibidas
+  // ao trocar de idioma, revalida apenas os campos que já mostram erro, para traduzir a mensagem
+  const previousSchema = useRef(schema)
   useEffect(() => {
-    if (isSubmitted) void trigger()
-  }, [schema, isSubmitted, trigger])
+    if (previousSchema.current === schema) return
+    previousSchema.current = schema
+    const fields = (['name', 'email', 'message'] as const).filter((field) => getFieldState(field).invalid)
+    if (fields.length > 0) void trigger(fields)
+  }, [schema, trigger, getFieldState])
 
   const onSubmit = async (values: FormValues) => {
     setStatus('idle')
