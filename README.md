@@ -47,6 +47,7 @@
 - [Testes](#-testes)
 - [Documentações utilizadas](#-documentações-utilizadas)
 - [Autor](#-autor)
+- [Contribuição](#-contribuição)
 - [Agradecimentos](#-agradecimentos)
 - [Licença](#-licença)
 
@@ -341,6 +342,16 @@ Verificações manuais realizadas:
 | Nome | GitHub | LinkedIn | E-mail |
 | --- | --- | --- | --- |
 | **Pedro José Camilo** | [@Phijey](https://github.com/Phijey) | [LinkedIn](https://www.linkedin.com/in/pedro-jos%C3%A9-m-t-camilo-5224352b4) | pedrojosetavarescamilo@gmail.com |
+
+---
+
+## 🤝 Contribuição
+
+1. Faça um **fork** do repositório.
+2. Crie uma branch: `git checkout -b feat/minha-melhoria`.
+3. Faça commits descritivos: `git commit -m "feat: descrição da melhoria"`.
+4. Envie a branch: `git push origin feat/minha-melhoria`.
+5. Abra um **Pull Request** explicando o que mudou.
 
 ---
 
