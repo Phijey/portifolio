@@ -27,7 +27,6 @@ export const profile = {
     'SQL / MySQL',
     'NoSQL',
     'Python',
-    'Pandas',
     'HTML',
     'CSS',
     'JavaScript',

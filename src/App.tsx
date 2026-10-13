@@ -1,8 +1,10 @@
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
-import { SectionHeading } from './components/SectionHeading'
-import { sections } from './data/sections'
 import { useLanguage } from './i18n/useLanguage'
+import { About } from './sections/About'
+import { Contact } from './sections/Contact'
+import { Experiences } from './sections/Experiences'
+import { Projects } from './sections/Projects'
 
 export function App() {
   const { t } = useLanguage()
@@ -16,14 +18,11 @@ export function App() {
         {t('skip')}
       </a>
       <Header />
-      <main id="conteudo" className="pt-16">
-        {sections.map((section, i) => (
-          <section key={section.id} id={section.id} className="border-b border-line py-24">
-            <div className="container-page">
-              <SectionHeading index={i + 1} kicker={t(section.label)} title={t(section.label)} />
-            </div>
-          </section>
-        ))}
+      <main id="conteudo">
+        <About />
+        <Projects />
+        <Experiences />
+        <Contact />
       </main>
       <Footer />
     </>
